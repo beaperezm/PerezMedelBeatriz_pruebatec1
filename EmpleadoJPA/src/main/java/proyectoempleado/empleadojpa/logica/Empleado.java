@@ -132,10 +132,22 @@ public class Empleado implements Serializable {
     
 
     @Override
-    public String toString() {
+   /* public String toString() {
         return "\nEmpleado: " + '{'+ "id= " + id + ", nombre= " + nombre + ", apellido= " + apellido + ", cargo= " + cargo + ", salario= " + salario + ", fechaInicio= " + (fechaInicio.getYear()+1900)  + "-" + (fechaInicio.getMonth()+1)  + "-" + fechaInicio.getDate()  + '}';
-    }
+    }*/
     
+      public String toString() {
+          StringBuilder sb = new StringBuilder();
+          sb.append("===============================================================================================\n");
+          sb.append(String.format("| %-8s | %-14s | %-14s | %-16s | %-10s | %-16s |\n", "Id", "Nombre", "Apellido", "Cargo", "Salario", "Fecha de Inicio"));
+          sb.append("-------------------------------------------------------------------------------------------------\n");
+          
+          sb.append(String.format("| %-8s | %-14s | %-14s | %-16s | %-10s | %-16s |\n", id, nombre, apellido, cargo, salario, (fechaInicio.getYear()+1900)  + "-" + (fechaInicio.getMonth()+1)  + "-" + fechaInicio.getDate()));
+          
+          sb.append("=================================================================================================\n");
+          
+        return sb.toString();
+    }
      
     
     
