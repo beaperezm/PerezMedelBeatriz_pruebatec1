@@ -133,7 +133,7 @@ public class Empleado implements Serializable {
 
     @Override
     public String toString() {
-        return "\nEmpleado: " + '{'+ "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", cargo=" + cargo + ", salario=" + salario + ", fechaInicio=" + fechaInicio + '}';
+        return "\nEmpleado: " + '{'+ "id= " + id + ", nombre= " + nombre + ", apellido= " + apellido + ", cargo= " + cargo + ", salario= " + salario + ", fechaInicio= " + (fechaInicio.getYear()+1900)  + "-" + (fechaInicio.getMonth()+1)  + "-" + fechaInicio.getDate()  + '}';
     }
     
     
