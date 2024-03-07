@@ -54,7 +54,7 @@ public class EmpleadoJPA {
             
            case 2:
                System.out.println("**********************************************************************************************************************************");
-               System.out.println("*                                               LISTADO DE USUARIOS                                                              *");
+               System.out.println("*                                               LISTADO DE EMPLEADOS                                                              *");
                System.out.println("**********************************************************************************************************************************");
                System.out.println(control.mostrarEmpleados(empleados));
                break;
