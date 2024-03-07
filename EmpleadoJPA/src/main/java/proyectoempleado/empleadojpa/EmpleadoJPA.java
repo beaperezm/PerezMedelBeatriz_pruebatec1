@@ -29,14 +29,16 @@ public class EmpleadoJPA {
        */
        
        do {
-           
-           System.out.println("Menú de opciones");
+           System.out.println("========================================");
+           System.out.println("            MENÚ DE OPCIONES            ");
+           System.out.println("========================================");
            System.out.println("1. Insertar Empleado");
            System.out.println("2. Listar Empleados");
            System.out.println("3. Actualizar Empleado"); 
            System.out.println("4. Eliminar Empleado");
            System.out.println("5. Buscar empleado por cargo");
            System.out.println("6. Salir");
+           System.out.println("========================================");
            opcion = sc.nextInt();
            
            
@@ -51,6 +53,9 @@ public class EmpleadoJPA {
                 break;
             
            case 2:
+               System.out.println("**********************************************************************************************************************************");
+               System.out.println("*                                               LISTADO DE USUARIOS                                                              *");
+               System.out.println("**********************************************************************************************************************************");
                System.out.println(control.mostrarEmpleados(empleados));
                break;
                
@@ -68,13 +73,16 @@ public class EmpleadoJPA {
                */
                 
                while (bandera == false && empleado.isBorradoLogico() == false) {
-                    System.out.println("¿Qué desea modificar?");
+                   System.out.println( "========================================");
+                    System.out.println("          ¿Qué desea modificar?         ");
+                    System.out.println("========================================");
                     System.out.println("1. Nombre");
                     System.out.println("2. Apellido");
                     System.out.println("3. Cargo");
                     System.out.println("4. Salario");
                     System.out.println("5. Fecha de inicio");
                     System.out.println("6. Salir");
+                    System.out.println("========================================");
                     opcion = sc.nextInt();
 
                     if(opcion == 1) {
